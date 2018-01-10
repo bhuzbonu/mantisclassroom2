@@ -1,0 +1,16 @@
+<ion-modal-view>
+    <ion-header-bar ng-class="headerClass ? headerClass : 'bar-positive'">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="__cancelCallback()">Cancel</button>
+        </div>
+        <h1 class="title">{{__modalTitle ? __modalTitle : 'Multi Select'}}</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="__multiselectCallback()">Done</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <ion-checkbox style="font-size:14px"
+                      ng-repeat="item in __multiselectModalData.options"
+                      ng-model="item.selected">{{item.label || '&nbsp;'}}</ion-checkbox>
+    </ion-content>
+</ion-modal-view>

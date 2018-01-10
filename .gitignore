@@ -1,0 +1,4 @@
+**/.DS_Store
+client/build/**
+client/styles/main.css
+..gitignore.swp

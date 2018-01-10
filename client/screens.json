@@ -1,0 +1,27 @@
+{
+  "id": "app",
+  "name": "mantisclassroom2",
+  "startScreen": "app.blank",
+  "screens": [
+    {
+      "id": "blank",
+      "name": "BLANK",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.blank"
+    },
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.multiselect"
+    }
+  ],
+  "sourceAppId": "_blank",
+  "sourceScreenId": "app"
+}

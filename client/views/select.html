@@ -1,0 +1,21 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="hideModal()">Cancel</button>
+        </div>
+        <h1 class="title">{{__modalTitle ? __modalTitle : 'Select'}}</h1>
+    </ion-header-bar>
+    <ion-content delegate-handle="selectListModalContent">
+        <label ng-show="__isSearch" class="item item-input">
+            <input type="text" placeholder="{{__placeholder || 'Search: '}}" ng-model="model.__search">
+        </label>
+        <ion-radio style="font-size:14px"
+                   name="__modalId"
+                   ng-repeat="item in __selectModalData.options | filter:{ label: model.__search }"
+                   ng-model="__selectModalData.selected"
+                   ng-change="__selectCallback()"
+                   ng-value="item">
+            <span class="title" ng-bind-html="item.label || '&nbsp;' | highlight: model.__search"></span>
+        </ion-radio>
+    </ion-content>
+</ion-modal-view>

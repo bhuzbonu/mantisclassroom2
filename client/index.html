@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS Meta Tags. See: https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Application</title>
+
+    <!-- build:css styles/styles.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/dependencies/5.2.1/angular-ui-notification/dist/angular-ui-notification.min.css" />
+    <link rel="stylesheet" href="/dependencies/5.2.1/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="/dependencies/5.2.1/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="/dependencies/5.2.1/ng-table/dist/ng-table.min.css" />
+    <link rel="stylesheet" href="/dependencies/5.2.1/select2/select2.css" />
+    <!-- endbower -->
+    <!-- styles:app -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- /styles:app -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts.js -->
+    <!-- bower:js -->
+    <script src="/dependencies/5.2.1/angular/angular.js"></script>
+    <script src="/dependencies/5.2.1/angular-cookies/angular-cookies.js"></script>
+    <script src="/dependencies/5.2.1/angular-uuid/uuid.min.js"></script>
+    <script src="/dependencies/5.2.1/angular-jsonrpc-q/build/jsonrpc.js"></script>
+    <script src="/dependencies/5.2.1/angular-load/angular-load.js"></script>
+    <script src="/dependencies/5.2.1/angular-mocks/angular-mocks.js"></script>
+    <script src="/dependencies/5.2.1/moment/moment.js"></script>
+    <script src="/dependencies/5.2.1/angular-moment/angular-moment.js"></script>
+    <script src="/dependencies/5.2.1/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+    <script src="/dependencies/5.2.1/angular-ui-select/dist/select.js"></script>
+    <script src="/dependencies/5.2.1/angular-animate/angular-animate.js"></script>
+    <script src="/dependencies/5.2.1/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/dependencies/5.2.1/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/dependencies/5.2.1/ionic/js/ionic.js"></script>
+    <script src="/dependencies/5.2.1/ionic/js/ionic-angular.js"></script>
+    <script src="/dependencies/5.2.1/javascript-load-image/js/load-image.all.min.js"></script>
+    <script src="/dependencies/5.2.1/jstzdetect/jstz.min.js"></script>
+    <script src="/dependencies/5.2.1/ng-table/dist/ng-table.min.js"></script>
+    <script src="/dependencies/5.2.1/promise-polyfill/promise.js"></script>
+    <script src="/dependencies/5.2.1/jquery/dist/jquery.js"></script>
+    <script src="/dependencies/5.2.1/select2/select2.js"></script>
+    <script src="/dependencies/5.2.1/underscore/underscore.js"></script>
+    <script src="/dependencies/5.2.1/uri.js/src/URI.js"></script>
+    <script src="/dependencies/5.2.1/webrtc-adapter/adapter.js"></script>
+    <script src="/dependencies/5.2.1/ionic-datepicker/dist/ionic-datepicker.bundle.min.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/module.js"></script>
+    <script src="app.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/mockService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/powwowLoginService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/powwowLoginNewService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/rpcService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/wsService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/apiServiceProvider.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/app.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/appmodel.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/config.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/exceptionHandler.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/http-interceptor.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/initialize.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/mockdata.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/powwowLogin.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/powwowLoginNew.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/queue.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/requestResponseHandler.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/screens.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/services.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/url.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/viewport.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/ws.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/directives/powwowChange.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/filters/highlight.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/filters/trustAsHtml.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/services/popupService.js"></script>
+    <script src="/dependencies/5.2.1/powwow-ui-common/src/services/tooltipService.js"></script>
+    <!-- endbower -->
+    <!-- scripts:components -->
+    <script src="/components/bower_components/autocomplete/src/component.js"></script>
+    <script src="/components/bower_components/breadcrumb/src/component.js"></script>
+    <script src="/components/bower_components/chart.js/dist/Chart.js"></script>
+    <script src="/components/bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <script src="/components/bower_components/chart_v1/src/component.js"></script>
+    <script src="/components/bower_components/chart_v2/src/component.js"></script>
+    <script src="/components/bower_components/custom-photo/src/component.js"></script>
+    <script src="/components/bower_components/date-input/src/component.js"></script>
+    <script src="/components/bower_components/failuserflow/src/component.js"></script>
+    <script src="/components/bower_components/footer-bar/src/component.js"></script>
+    <script src="/components/bower_components/dynamic-floating-footer/src/component.js"></script>
+    <script src="/components/bower_components/signature_pad/signature_pad.js"></script>
+    <script src="/components/bower_components/glass-signature/src/component.js"></script>
+    <script src="/components/bower_components/header-bar/src/component.js"></script>
+    <script src="/components/bower_components/include-screen/src/component.js"></script>
+    <script src="/components/bower_components/google-maps/lib/Google.js"></script>
+    <script src="/components/bower_components/map/src/component.js"></script>
+    <script src="/components/bower_components/multiselect/src/component.js"></script>
+    <script src="/components/bower_components/scan-barcode/src/component.js"></script>
+    <script src="/components/bower_components/secureContainer/src/component.js"></script>
+    <script src="/components/bower_components/select/src/component.js"></script>
+    <script src="/components/bower_components/startuserflow/src/component.js"></script>
+    <script src="/components/bower_components/steps/src/component.js"></script>
+    <script src="/components/bower_components/stopuserflow/src/component.js"></script>
+    <script src="/components/bower_components/take-photo/src/component.js"></script>
+    <script src="/components/bower_components/switch-type-to-number/src/component.js"></script>
+    <script src="/components/bower_components/time-input/src/component.js"></script>
+    <!-- endcomponents -->
+    <!-- scripts:app -->
+    <script src="handler.js"></script>
+    <script src="states.js"></script>
+    <!-- /scripts:app -->
+    <!-- scripts:controllers -->
+    <script src="controllers/app.js"></script>
+    <script src="controllers/app/blank.js"></script>
+    <script src="controllers/app/menu.js"></script>
+    <script src="controllers/app/multiselect.js"></script>
+    <!-- /scripts:controllers -->
+    <!-- endbuild -->
+
+    <!-- build:js cordova/powwow.js -->
+    <!-- scripts:cordova -->
+    <script src="/dependencies/5.2.1/powwow-ui-common/cordova/cordova-injector.js"></script>
+    <!-- /scripts:cordova -->
+    <!-- endbuild -->
+
+</head>
+<body ng-app="app">
+    <ion-nav-view></ion-nav-view>
+</body>
+</html>
