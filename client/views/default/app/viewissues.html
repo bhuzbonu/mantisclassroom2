@@ -12,9 +12,9 @@
         <ion-list data-comp-id="ionic-list.1">
             <div class="item item-icon-right" data-comp-id="item.1"
                 ng-click="app.action('listview', 'data.listItems[item].action', this)"
-                ng-repeat="item in data.listItems"
+                ng-repeat="item in data.issueslist" powwow-change="{dynamic:false}"
                 style="border-top: 1px solid rgba(255, 255, 255, 0);">
-                <div class=" positive" data-comp-id="text.1" ng-bind="item.string">Price &amp; Availability</div>
+                <div class=" positive" data-comp-id="text.1" ng-bind="item.id">Price &amp; Availability</div>
                 <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
                     style="font-size: 20px;"></i>
             </div>
