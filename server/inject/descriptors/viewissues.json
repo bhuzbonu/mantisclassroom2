@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "issueslist": {
+      "type": "string",
+      "selector": "body",
+      "control": "property.innerText"
+    },
+    "isViewIssues": {
+      "type": "identifier",
+      "selector": "html",
+      "control": "url.view_all_bug_page"
+    }
+  },
+  "connect": []
+}
