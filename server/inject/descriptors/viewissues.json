@@ -2,9 +2,19 @@
   "type": "object",
   "properties": {
     "issueslist": {
-      "type": "string",
-      "selector": "body",
-      "control": "property.innerText"
+      "type": "array",
+      "selectorAll": "body",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText",
+            "selectIndex": 3
+          }
+        }
+      }
     },
     "isViewIssues": {
       "type": "identifier",
