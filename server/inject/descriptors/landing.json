@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "isLanding": {
+      "type": "identifier",
+      "selector": "a",
+      "control": "exists",
+      "selectContains": "Assigned to Me (Unresolved)"
+    }
+  },
+  "connect": []
+}
