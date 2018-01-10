@@ -6,6 +6,12 @@
       "selector": "a",
       "control": "exists",
       "selectContains": "Assigned to Me (Unresolved)"
+    },
+    "clickAssignedToMe": {
+      "type": "action",
+      "selector": "a",
+      "control": "action.link",
+      "selectContains": "Assigned to Me (Unresolved)"
     }
   },
   "connect": []
