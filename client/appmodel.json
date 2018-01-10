@@ -61,5 +61,34 @@
         }
       }
     }
+  },
+  "viewissues": {
+    "type": "object",
+    "comment": "ListView",
+    "properties": {
+      "listItems": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "string": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "action": {
+              "type": "action"
+            },
+            "icon": {
+              "type": "string"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,56 @@
+{
+  "listItems": [
+    {
+      "string": "Price & Availability",
+      "icon": "fa-tag"
+    },
+    {
+      "string": "Search by Part Number",
+      "icon": "fa-search"
+    },
+    {
+      "string": "Browse Products",
+      "icon": "fa-cogs"
+    },
+    {
+      "string": "Direct Order Entry",
+      "icon": "fa-file-text"
+    },
+    {
+      "string": "Import Order",
+      "icon": "fa-download"
+    },
+    {
+      "string": "View Order History",
+      "icon": "fa-history"
+    },
+    {
+      "string": "Quick Quote Entry",
+      "icon": "fa-calculator"
+    },
+    {
+      "string": "SP/SD Request",
+      "icon": "fa-money"
+    },
+    {
+      "string": "SD Claim",
+      "icon": "fa-bullhorn"
+    },
+    {
+      "string": "RMA",
+      "icon": "fa-archive"
+    },
+    {
+      "string": "Stock Rotation",
+      "icon": "fa-repeat"
+    },
+    {
+      "string": "New Part Number",
+      "icon": "fa-cog"
+    },
+    {
+      "string": "View/Print Statement",
+      "icon": "fa-print"
+    }
+  ]
+}

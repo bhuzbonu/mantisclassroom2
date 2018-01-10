@@ -1,0 +1,23 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">List View</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.2"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1">
+        <ion-list data-comp-id="ionic-list.1">
+            <div class="item item-icon-right" data-comp-id="item.1"
+                ng-click="app.action('listview', 'data.listItems[item].action', this)"
+                ng-repeat="item in data.listItems"
+                style="border-top: 1px solid rgba(255, 255, 255, 0);">
+                <div class=" positive" data-comp-id="text.1" ng-bind="item.string">Price &amp; Availability</div>
+                <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
+                    style="font-size: 20px;"></i>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
