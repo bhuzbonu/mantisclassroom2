@@ -1,1 +1,21 @@
-{}
+{
+  "login": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "errorMessage": {
+        "type": "string",
+        "selectContains": "Your account may be disabled"
+      },
+      "warning": {
+        "type": "string",
+        "selectContains": "Admin directory should be removed"
+      }
+    }
+  }
+}

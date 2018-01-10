@@ -14,7 +14,7 @@
     "password": {
       "type": "string",
       "selector": "[name=\"password\"]",
-      "control": "property.innerText"
+      "control": "text"
     },
     "errorMessage": {
       "type": "string",
@@ -27,6 +27,11 @@
       "selector": "font",
       "control": "property.innerText",
       "selectContains": "Admin directory should be removed"
+    },
+    "submit": {
+      "type": "action",
+      "selector": ".button",
+      "control": "action.button"
     }
   },
   "connect": [
