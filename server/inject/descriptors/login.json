@@ -3,8 +3,30 @@
   "properties": {
     "islogin": {
       "type": "identifier",
-      "selector": "body",
+      "selector": "[name=\"login_form\"]",
       "control": "exists"
+    },
+    "username": {
+      "type": "string",
+      "selector": "[name=\"username\"]",
+      "control": "property.innerText"
+    },
+    "password": {
+      "type": "string",
+      "selector": "[name=\"password\"]",
+      "control": "property.innerText"
+    },
+    "errorMessage": {
+      "type": "string",
+      "selector": "font",
+      "control": "property.innerText",
+      "selectContains": "Your account may be disabled"
+    },
+    "warning": {
+      "type": "string",
+      "selector": "font",
+      "control": "property.innerText",
+      "selectContains": "Admin directory should be removed"
     }
   },
   "connect": [
