@@ -26,7 +26,7 @@
       "name": "Login",
       "sourceScreenId": "app.login.logincool",
       "sourceAppId": "universaltemplates",
-      "model": "login_2"
+      "model": "login"
     }
   ],
   "sourceAppId": "_blank",
