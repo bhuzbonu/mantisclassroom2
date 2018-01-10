@@ -1,0 +1,10 @@
+{
+  "name": "mantisclassroom2",
+  "version": "5.2.1",
+  "private": true,
+  "description": "PowWow transformation",
+  "main": "start.js",
+  "scripts": {
+    "start": "nodemon start.js | bunyan -o short --color"
+  }
+}

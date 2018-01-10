@@ -1,0 +1,13 @@
+{
+	"remoteAppConfig": {
+		"loginType": "process",
+		"cmd": "node",
+		"args": ["<%= transformAppsDir %>/<%= appId %>/server/start.js", "--sessionID", ":sessionID" ]
+	},
+	"appData": {
+		"appType": "local",
+		"appZip": "<%= staticStorage %><%= appId %>/client.zip",
+		"sessionCheck": false,
+		"smartuxApp": "<%= staticStorage %><%= appId %>/smartuxApp.json"
+	}
+}
