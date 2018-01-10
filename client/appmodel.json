@@ -88,6 +88,20 @@
         "update": {
           "type": "none"
         }
+      },
+      "issueslist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        }
       }
     }
   }
