@@ -1,0 +1,57 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-content data-comp-id="ionic-content.1">
+        <div data-comp-id="div.1" style="margin: 4% 5%;">
+            <div class="row" data-comp-id="row.1">
+                <div class="col text-center" data-comp-id="column.1"
+                    style="padding: 40px 0px 20px;"><img data-comp-id="image.1" data-img="" ng-src="images/login/Placeholder-Img.png"
+                    style="width: 30%;">
+                    <div data-comp-id="text.1"
+                        style="font-size: 16px; line-height: 30px; font-weight: 300;">Tagline goes here</div>
+                </div>
+            </div>
+        </div>
+        <!--Form Contents-->
+        <form>
+            <div data-comp-id="div.2" style="width: 80%; margin: 2% 10%;">
+                <!--User Input-->
+                <div class="text-center assertive" data-comp-id="text.2"
+                    ng-bind="data.errorMessage" ng-show="data.errorMessage"></div>
+                <div class="row" data-comp-id="row.2">
+                    <div class="col" data-comp-id="column.2">
+                        <label class="item item-input item-stacked-label" data-comp-id="textInput.1">
+                            <span class="input-label">Username</span>
+                            <input ng-model="data.username" type="text">
+                        </label>
+                    </div>
+                </div>
+                <!--User Input-->
+                <!--User Input-->
+                <div class="row" data-comp-id="row.3" style="margin: 2% 0% 0%;">
+                    <div class="col" data-comp-id="column.3" style="padding: 5px;">
+                        <label class="item item-input item-stacked-label" data-comp-id="textInput.2">
+                            <span class="input-label">Password</span>
+                            <input ng-model="data.password" type="password">
+                        </label>
+                    </div>
+                </div>
+                <!--User Input-->
+                <div class="row" data-comp-id="row.4" style="margin: 5% 0%;">
+                    <div class="col" data-comp-id="column.4">
+                        <input class="button button-block button-positive" data-comp-id="button.1"
+                            ng-click="login()"
+                            style="border-color: rgba(255, 255, 255, 0);" type="submit" value="Login">
+                        <div class="row" data-comp-id="row.5" ng-click="loginViaTouch()">
+                            <div class="col text-center" data-comp-id="column.5"
+                                style="border-width: 1px; border-style: solid; border-color: #4398D2;">
+                                <span><img data-comp-id="image.2" data-img="" ng-src="images/login/touch-id.png"
+                                    style="vertical-align: middle; width: 50px;"></span>
+                                <span class="" data-comp-id="text.3" style="color: rgb(74, 69, 69);">login with touch id</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--Form Contents-->
+    </ion-content>
+</ion-view>

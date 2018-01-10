@@ -17,5 +17,49 @@
         "selectContains": "Admin directory should be removed"
       }
     }
+  },
+  "login_2": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "username": {
+        "type": "string",
+        "label": "username",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "password": {
+        "type": "string",
+        "label": "password",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "errorMessage": {
+        "type": "string",
+        "label": "errorMessage",
+        "update": {
+          "type": "none"
+        }
+      },
+      "submit": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }
